@@ -1419,6 +1419,53 @@ footer {
         </div>
       </div>
     </div>
+    <div class="project-featured reveal reveal-d1" style="flex-direction:row-reverse;">
+      <div class="proj-visual">
+        <div class="proj-visual-bg" style="background:linear-gradient(135deg,#1a0533 0%,#0a0a2e 100%);"></div>
+        <div class="proj-visual-code">
+          <span class="kw">const</span> <span class="fn">BuildWebApp</span> = (<span class="str">prompt</span>) => {<br/>
+          &nbsp;&nbsp;<span class="kw">const</span> html = <span class="kw">await</span> <span class="fn">groq</span>.generate({<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;model: <span class="str">"llama-3.3-70b"</span>,<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;prompt: <span class="fn">prompt</span>,<br/>
+          &nbsp;&nbsp;});<br/><br/>
+          &nbsp;&nbsp;<span class="kw">return</span> (<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&lt;Preview<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;html={html}<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;credits={<span class="fn">useCredits</span>()}<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;/&gt;<br/>
+          &nbsp;&nbsp;);<br/>
+          }
+        </div>
+        <div class="proj-num-big">02</div>
+      </div>
+      <div class="proj-info">
+        <div>
+          <div class="proj-cat">Featured Project · AI SaaS Application</div>
+          <div class="proj-title">Build<br/>WebApp</div>
+          <p class="proj-desc">An AI-powered website generator that turns plain English prompts into complete, production-ready websites in seconds. Built with a credit-based SaaS model, Stripe payments, and a referral system.</p>
+          <div class="proj-tags">
+            <span class="proj-tag">React.js</span>
+            <span class="proj-tag">Node.js</span>
+            <span class="proj-tag">PostgreSQL</span>
+            <span class="proj-tag">Groq AI</span>
+            <span class="proj-tag">Clerk</span>
+            <span class="proj-tag">Stripe</span>
+            <span class="proj-tag">Vercel</span>
+          </div>
+          <div class="proj-highlights-list">
+            <div class="proj-hl">Groq LLaMA 3.3 70B generates full HTML/CSS/JS in under 10s</div>
+            <div class="proj-hl">Live iframe preview, code view toggle, and HTML download</div>
+            <div class="proj-hl">Credit-based monetisation with Stripe checkout integration</div>
+            <div class="proj-hl">Referral & Earn system — share link, get free credits</div>
+            <div class="proj-hl">Neon serverless PostgreSQL with auto user provisioning</div>
+          </div>
+        </div>
+        <div class="proj-links">
+          <a href="https://build-web-app.vercel.app/" target="_blank" class="proj-link proj-link-live">↗ Live Demo</a>
+          <a href="https://github.com/aryanydv07/BuildWebApp" target="_blank" class="proj-link proj-link-gh">⌥ GitHub</a>
+        </div>
+      </div>
+    </div>
     <div class="project-secondary reveal reveal-d1">
       <div class="proj-card-sm">
         <div class="proj-cat">Client Work · Responsive Websites</div>
